@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="account">
+        <!-- <div class="login">
+            <h4>login</h4>
+            <form action="input" class="form">
+                <div class="content">
+                    <input type="username" class="username" placeholder="username" type="text">
+                    <input type="password" name="password" class="password" placeholder="password">
+                    <input type="submit" value="login" class="login-btn">
+                </div>
+            </form>
+            <p class="question">Never shopped with us??<span><a href="#" class="signup"> sign up</a></span> here</p>
+        </div> -->
+        <div class="sign-up">
+                <h4>Sign-up</h4>
+                <form action="form" class="signup-form">
+                    <!--
+                    <div class="email-verification">
+                        <input type="email" name="email" id="email" placeholder="please type in your eamail">
+                        <p class="error-message">this is not a valid email address</p>
+                        <button type="submit" class="submit-email">send email</button>
+                    </div> -->
+                    <!-- <div class="code-verification">
+                            <p>please type in the code sent to your Email</p>
+                            <input type="number" name="nunber" id="code" placeholder="1 2 3 4 5 6">
+                            <button type="submit" class="verify">verify code</button>
+                        </div>  -->
+                        <!-- <div class="information">
+                            <h5>please fill in your details</h5>
+                            <p>first name</p>
+                            <input type="text" class="first-name" placeholder=" first name here" required>
+                            <p>surname</p>
+                            <input type="text" class="surname" placeholder="surname here" required>
+                            <p>other names</p>
+                            <input type="text" class="other-names" placeholder="other names here" >
+                            <p class="dob">date of birth</p>
+                            <input placeholder="dob"type="date" name="date of birth" id="dob" required>
+                            <p class="ph-no">phone no</p>
+                            <input type="tel" name="number" id="ph-no" placeholder="phone number" required>
+                            <p>country</p>
+                            <input type="country" name="country" id="country" placeholder="Country"  required>
+                            <p>state</p>
+                            <input type="state" id="state" placeholder="state" required>
+                            <p>address</p>
+                            <input type="address" placeholder="address" required>
+                            <input type="submit" value="submit">
+                        </div> -->
+                        <div class="success-message">
+                            <div class="message">
+                                <p>profile created successfully please click <span>ok</span> to  continue to our site</p>
+                                <a href="/html/index.html"><button type="button">ok</button></a>
+                            </div>
+                        </div>
+                        
+                        <!-- <p class="question">Ever shopped with us??<span><a href="#" class="signup-link"> sign in</a></span> here</p> -->
+                </form>
+                
+                <!-- <div class="svgs">
+                    <h5>or with</h5> 
+                    <button class="svg-button" type="button">
+                        <svg class="google-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+                            <path
+                                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                        </svg>
+                        <p>google</p>
+                    </button>
+                    <button class="svg-button" id="facebook" type="button" class="facebook">
+                        <svg class="facebook-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </svg>
+                        <p>facebook</p>
+                    </button>
+                    <button class="svg-button" type="button" id="twitter">
+                        <svg class="twitter-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                        </svg>
+                        <p>twitter</p>
+                    </button>
+                </div> -->
+            </div>
+    </div>
+</body>
+<script src="/login&signup.js"></script>
+</html>

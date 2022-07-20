@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(94, 91, 91, 0.425),rgba(17, 17, 17, 0.267)),
+    url(/img/pexels-melvin-buezo-2529147.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+input:focus{
+    outline: none;
+}
+.sign-up,
+.login{
+    width: 30vw; 
+    height: 80vh;
+    background-color: rgba(207, 201, 188, 0.322);
+    border-radius: 10px;
+    /* border: .5px solid white; */
+    overflow: auto;
+    overflow-x: hidden;
+}
+.account button{
+    cursor: pointer;
+}
+/* log in start */
+.content{
+    transform: translate(0,70%);
+}
+h4{
+    transform: translate(40%,400%);
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.login h4{
+    transform: translate(40%,300%);
+}
+.username,
+.password,
+.login-btn{
+    height: 3em;
+    position: relative;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: none;
+}
+.username,
+.password{
+    width: 70%;
+    left: 15%;
+    background-color: rgba(250, 235, 215, 0.589);
+    margin-top: 1.5em;
+    padding-left: 20%;
+}
+.username::placeholder,
+.password::placeholder{
+    transform: translateX(10%);
+    color: rgba(33, 37, 37, 0.719);
+    padding: 0;
+}
+.login-btn{
+    width: 30%;
+    height: 30px;
+    left: 35%;
+    cursor: pointer;
+    transform: translateY(100%);
+}
+.content p{
+    transform: translate(25%,800%);
+}
+/* log in ends */
+/* sign up start */
+/* .sign-up{
+    width: 100%;
+    height: 100%;
+} */
+.sign-up h4{
+    /* transform: translateY(-100%); */
+    margin-top: -20%;
+    margin-bottom: 10px;
+}
+.sign-up .email-verification{
+    position: absolute;
+    top: 35%;
+    left: 40% ;
+}
+.email-verification input{
+    position: relative;
+    width: 130%;
+    height: 3.5em;
+    padding-inline-start: 15%;
+    padding-inline-end: 10%;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(201, 195, 195);
+}
+.email-verification input:focus{
+    border: none;
+    outline: none;
+}
+.email-verification .error-message{
+    font-size: 15px;
+    color: rgb(238, 10, 10);
+    /* background-color: #b5d0f1; */
+    transform: translate(15%,120%);
+    text-transform: capitalize;
+}
+.email-verification button{
+    height: 2.5em;
+    width: 50%;
+    transform: translate(77%,200%);
+    border-radius: 10px;
+    border: none;
+    background-color: #fdf9eacb;
+}
+.svgs{
+    width: 35vw;
+    height: 7vh;
+    position: absolute;
+    left: 42%;
+    top: 70%;
+    /* background-color: white; */
+}
+.svg-button{
+    width: 10%;
+    height: auto;
+    margin-right: 2.5em;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.877);
+}
+.svg-button:hover{
+    border: .5px solid white;
+}
+svg{
+    height: 2.5em;
+}
+.account h5:nth-child(3){
+    transform: translate(40%,62vh);
+}
+.signup-link{
+    color: #11f;
+    font-size: large;
+}
+.account button p{
+    display: none;
+}
+.facebook-svg{
+    /* transform: translateY(20%); */
+    fill: rgb(20, 58, 247);
+    
+}
+#twitter{
+    background-color: rgb(17, 124, 224);
+}
+.twitter-svg{
+    fill: #fff;
+}
+.question{
+    position: absolute;
+    bottom: 12%;
+    left: 41%;
+}
+.code-verification{
+    display: flex;
+    flex-direction: column;
+}
+.code-verification input{
+    width: 16%;
+    height: 6vh;
+    padding-inline-start: 10px;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 12px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.code-verification p{
+    text-transform: capitalize;
+    transform: translate(20%,30vh);
+}
+.code-verification button{
+    width: 10%;
+    height: 2.5em;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10%;
+    margin: auto;
+}
+.account .information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(25%);
+}
+.information input,
+.information p,
+.information h5{
+    /* margin-left: 5%; */
+    margin-bottom: 10px;
+}
+.information h5{
+    transform: translateY(-70%);
+    text-transform: capitalize;
+}
+.information input{
+    width: 70%;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    padding-inline-start: 10%;
+    text-transform: capitalize;
+}
+.information input:focus{
+    border: none;
+}
+.information p{
+    text-transform: capitalize;
+}
+.information input:last-child{
+    margin-top: 5%;
+    margin-bottom: 20%;
+    width: 40%;
+    padding: 0;
+}
+.success-message{
+    display: grid;
+    place-items: center;
+}
+.message{
+    width: 70%;
+    height: 40vh;
+    transform: translateY(80%);
+    background-color: rgb(240, 227, 194);
+    display: grid;
+    place-items: center;
+    place-content: center;
+    padding: 25px;
+    word-spacing: 5px;
+    line-height: 25px;
+    border-radius: 10px;
+}
+.message span{
+    color: #11f;
+    font-size: larger;
+}
+.message p,
+.message button{
+    margin-top: 30px;
+}
+.message button{
+    width: 5em;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #facd2bee;
+}
+.message button:hover{
+    border: .7px solid #fff;
+}
